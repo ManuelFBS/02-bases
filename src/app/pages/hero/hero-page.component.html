@@ -1,21 +1,21 @@
 <h1>{{ name() }}</h1>
 
 <dl>
-  <td>Nombre:</td>
-  <dd>{{ name() }}</dd>
+      <td>Nombre:</td>
+      <dd>{{ name() }}</dd>
 
-  <td>Edad:</td>
-  <dd>{{ age() }}</dd>
+      <td>Edad:</td>
+      <dd>{{ age() }}</dd>
 
-  <td class="mt-2">Método:</td>
-  <dd>{{ getHeroDescription() }}</dd>
+      <td class="mt-2">Método:</td>
+      <dd>{{ getHeroDescription() }}</dd>
 </dl>
 
 <h5>Capitalizado:</h5>
 <h5>{{ name().toLocaleUpperCase() }}</h5>
 
 <button (click)="changeHero()" class="btn btn-primary mx-2 mt-3">
-  Cambiar Nombre
+      Cambiar Nombre
 </button>
 
 <button (click)="changeAge()" class="btn btn-primary mt-3">Cambiar Edad</button>

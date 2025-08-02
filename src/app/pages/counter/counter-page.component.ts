@@ -1,21 +1,21 @@
 import { Component, signal } from '@angular/core';
 
 @Component({
-  templateUrl: './counter-page.component.html',
-  styleUrls: ['./counter-page.component.css'],
+      templateUrl: './counter-page.component.html',
+      styleUrls: ['./counter-page.component.css'],
 })
 export class CounterPageComponent {
-  counterSignal = signal(0);
+      counterSignal = signal(0);
 
-  increaseBy(value: number) {
-    this.counterSignal.update((current) => current + value);
-  }
+      increaseBy(value: number) {
+            this.counterSignal.update((current) => current + value);
+      }
 
-  decreaseBy(value: number) {
-    this.counterSignal.update((current) => current - value);
-  }
+      decreaseBy(value: number) {
+            this.counterSignal.update((current) => current - value);
+      }
 
-  resetCounter() {
-    this.counterSignal.set(0);
-  }
+      resetCounter() {
+            this.counterSignal.set(0);
+      }
 }
