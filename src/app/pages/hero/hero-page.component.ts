@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 
 @Component({
       templateUrl: './hero-page.component.html',
@@ -8,9 +8,15 @@ export class HeroPageComponent {
       name = signal('Ironman');
       age = signal(45);
 
-      getHeroDescription() {
-            return `${this.name()}-${this.age()} years old`;
-      }
+      getHeroDescription = computed(() => {
+            const description = `${this.name()}-${this.age()} years old`;
+
+            return description;
+      });
+
+      // getHeroDescription() {
+      //       return `${this.name()}-${this.age()} years old`;
+      // }
 
       changeHero() {
             this.name.set('Spiderman');
