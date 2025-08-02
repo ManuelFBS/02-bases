@@ -21,9 +21,9 @@ export class HeroPageComponent {
     this.age.set(60);
   }
 
-  getHeroNameUpperCase() {
-    return `${this.name().toUpperCase()}`;
-  }
+  // getHeroNameUpperCase() {
+  //   return `${this.name().toUpperCase()}`;
+  // }
 
   resetHero() {
     this.name.set('Ironman');
